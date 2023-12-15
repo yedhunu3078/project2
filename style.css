@@ -1,0 +1,238 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.main{
+
+    width: 1300px;
+    min-height: 100vh;
+    padding: 10px 10%;
+    overflow: hidden;
+    background-image: url("images/back-image.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+
+
+
+nav{
+
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+
+    width: 110px;
+}
+
+
+
+nav ul li{
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+ nav ul li a{
+
+    text-decoration: none;
+    
+    color: #333;
+    font-weight: 400;
+}
+nav ul li a:hover{
+
+    color: black;
+    
+}
+.btn{
+
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    background-image: linear-gradient(45deg,#df4881,#c430d7);
+    border-radius: 20px;
+    font-size: 15px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    color: white;
+}
+.login-btn{
+
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.banner{
+
+    margin-top: 10%;
+    max-width: 600px;
+
+}
+.banner h1{
+
+    font-size: 70px;
+    color: rgb(105, 5, 22);
+}
+.banner p{
+
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+
+.banner .btn{
+
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.btn:hover{
+
+    border-top-right-radius: 30px;
+
+}
+.feature
+        {
+
+    width: 550px;
+    position: absolute;
+    bottom: 0px;
+    right: 200px;
+}
+.feature.animated{
+    animation-delay: 1.5s;
+}
+
+.animated{
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+
+    100%{
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.menubtn{
+    width: 50px;
+    margin-left: 20px;
+    
+
+    display: none;
+}
+
+/* ---- media queries ----- */
+
+@media(max-width:480px){
+
+    .main{
+
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        overflow: hidden;
+        background-image: url("images/back-image.png");
+        background-position: center;
+        background-size: cover;
+        position: relative;}
+
+nav ul{
+    
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+
+.btn{
+
+    display: none;
+}
+nav .logo{
+
+    width: 150px;
+
+}
+nav ul li{
+
+    margin: 10px;
+    font-size: 15px;
+
+}
+.login-btn{
+
+    display: none;
+}
+
+.menubtn{
+
+    display: block;
+    width: 30px;
+}
+.show-menu{
+
+    max-height: 480px;
+}
+.feature{
+
+    width: 100%;
+    right: 0;
+    position: relative;
+    margin-top: 100px;
+}
+.abc{
+
+    bottom: 0;
+    padding: 0 10%;
+    z-index: 2;
+    position: absolute;
+    padding-bottom: 45px;
+}
+
+.abc h1{
+
+    color: rgb(230, 21, 157);
+    font-size: 50px;
+}
+
+
+
+
+    
+
+    
+    
+ 
+
+
+
+
+
+
+
+
+
+    
+
+}
